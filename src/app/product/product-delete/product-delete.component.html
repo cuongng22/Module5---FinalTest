@@ -1,0 +1,32 @@
+<a routerLink="">List Books</a>
+<form [formGroup]="bookForm" (ngSubmit)="submitDelete()" style="margin-top: 20px">
+  <br>
+  <div class="form-group">
+    <label for="name"><h5>Tên sách</h5></label>
+    <input class="form-control" id="name" placeholder="Nhập tên sản phẩm" type="text"
+           formControlName="title">
+
+
+  </div>
+  <br>
+  <div class="form-group">
+    <label for="price"><h5>Tác giả</h5></label>
+    <input class="form-control" id="price" placeholder="Nhập giá sản phẩm" type="text"
+           formControlName="author">
+
+  </div>
+  <br>
+
+  <div class="form-group">
+    <label for="description"><h5>Mô tả sách</h5></label>
+    <input class="form-control" id="description" placeholder="Nhập mô tả sản phẩm" type="text"
+           formControlName="description">
+
+  </div>
+  <br>
+
+
+  <div style="margin-top: 20px">
+    <button class="btn btn-primary" type="submit">Delete</button>
+  </div>
+</form>

@@ -1,0 +1,21 @@
+<a routerLink="">List Books</a>
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Tên sách</th>
+    <th>Tác giả</th>
+    <th>Mô tả sách</th>
+    <th></th>
+    <th></th>
+  </tr>
+  <tr>
+    <td>{{book.id}}</td>
+    <td>{{book.title}}</td>
+    <td>{{book.author}}</td>
+    <td>{{book.description}}</td>
+    <td>
+      <button>Edit</button></td>
+    <td>
+      <button (click)="delete(book.id)">Delete</button></td>
+  </tr>
+</table>
